@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.asperger.spring-pet-clinic' is invalid and this project uses 'com.asperger.springpetclinic' instead.
+* The original package name 'com.com.asperger.spring-pet-clinic' is invalid and this project uses 'com.com.asperger.springpetclinic' instead.
 
 # Getting Started
 
