@@ -1,4 +1,6 @@
 package com.asperger.springpetclinic.service;
 
-public interface PetService {
+import com.asperger.springpetclinic.model.Pet;
+
+public interface PetService extends CrudService<Pet, Long> {
 }
