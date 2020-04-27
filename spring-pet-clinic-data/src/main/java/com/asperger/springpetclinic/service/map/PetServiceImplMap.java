@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-@Service("PetServiceImpl")
+@Service
 @Profile({"map", "default"})
 public class PetServiceImplMap extends AbstractMapService<Pet, Long> implements PetService {
 
@@ -17,8 +17,8 @@ public class PetServiceImplMap extends AbstractMapService<Pet, Long> implements 
     }
 
     @Override
-    public Pet save(Long id, Pet pet) {
-        return super.save(id, pet);
+    public Pet save(Pet pet) {
+        return super.save(pet);
     }
 
     @Override

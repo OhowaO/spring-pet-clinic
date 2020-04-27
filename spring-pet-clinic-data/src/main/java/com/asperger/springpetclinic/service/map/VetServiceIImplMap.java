@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@Service("VetServiceImpl")
+@Service
 @Profile({"map", "default"})
 public class VetServiceIImplMap extends AbstractMapService<Vet, Long> implements VetService {
 
@@ -28,8 +28,8 @@ public class VetServiceIImplMap extends AbstractMapService<Vet, Long> implements
     }
 
     @Override
-    public Vet save(Long id, Vet vet) {
-        return super.save(id, vet);
+    public Vet save(Vet vet) {
+        return super.save(vet);
     }
 
     @Override

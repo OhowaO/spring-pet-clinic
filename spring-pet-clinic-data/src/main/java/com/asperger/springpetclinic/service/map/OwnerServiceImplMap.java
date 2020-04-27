@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@Service("OwnerServiceImpl")
+@Service
 @Profile({"map", "default"})
 public class OwnerServiceImplMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
@@ -26,8 +26,8 @@ public class OwnerServiceImplMap extends AbstractMapService<Owner, Long> impleme
     }
 
     @Override
-    public Owner save(Long id, Owner owner) {
-        return super.save(id, owner);
+    public Owner save(Owner owner) {
+        return super.save(owner);
     }
 
     @Override
